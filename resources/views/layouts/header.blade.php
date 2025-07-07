@@ -63,7 +63,6 @@
                                 <a href="{{ route('dashboard') }}">My Account</a>
                                 @can('admin')
                                     <a href="{{ route('admin.dashboard') }}">Admin Dashboard</a>
-                                    <a href="{{ route('manager.dashboard') }}">Manager Dashboard</a>
                                 @endcan
                                 <form id="logout_form" method="POST" action="{{ route('logout') }}">
                                     @csrf
